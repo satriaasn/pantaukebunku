@@ -1,16 +1,36 @@
-<!DOCTYPE html>
-<html lang="id">
-<head>
-  <meta charset="utf-8"/>
-  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport"/>
-  <title>TaniPintar - Manajemen Lahan</title>
-  
-  <!-- Tailwind CSS -->
-  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-  
-  <!-- Google Fonts & Material Symbols -->
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
-  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet" />
+  <!DOCTYPE html>
+  <html lang="id">
+  <head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport"/>
+    <title>TaniPintar - Manajemen Lahan</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    
+    <!-- Google Fonts & Material Symbols -->
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet" />
+
+    <!-- Tailwind Config Custom (Primary Color: #48A111) -->
+    <script id="tailwind-config">
+          tailwind.config = {
+              darkMode: "class",
+              theme: {
+                  extend: {
+                      colors: {
+                          "primary": "#48A111",
+                          "background-light": "#f6f7f8",
+                          "background-dark": "#101822",
+                      },
+                      fontFamily: {
+                          "display": ["Space Grotesk", "sans-serif"]
+                      },
+                      borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "2xl": "1rem", "3xl": "1.5rem", "full": "9999px"},
+                  },
+              },
+          }
+    </script>
 
     <!-- React & Babel -->
     <script src="https://unpkg.com/react@18/umd/react.production.min.js" crossorigin></script>
@@ -808,7 +828,6 @@
                   <button onClick={() => setShowMasterCategory(false)} className="p-1 text-slate-400 bg-slate-100 rounded-full"><Icon name="close" /></button>
                 </div>
 
-<<<<<<< HEAD
                 <div className="mb-6 space-y-2">
                   {allCategories.map(c => (
                     <div key={c.id} className="flex justify-between items-center p-3 bg-slate-50 rounded-xl border border-slate-100">
@@ -846,10 +865,3 @@
   </script>
   </body>
   </html>
-=======
-  const root = ReactDOM.createRoot(document.getElementById('root'));
-  root.render(<App />);
-</script>
-</body>
-</html>
->>>>>>> ae6a5394b52b4796129930d669db327adaa95f01
